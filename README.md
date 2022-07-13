@@ -52,7 +52,7 @@ Download `libyuv` sources and move all files into `jni` folder.
 or use the downloaded sources `libyuv-20220324.tar.gz`
 (This is the original official version just excludes `.git` folder. Downloaded date: 2022/03/24)
 ```
-$ cd /Users/yhz61010/AndroidStudioProjects/LeoAndroidBaseUtilProject-Kotlin/
+$ cd /Users/yhz61010/AndroidStudioProjects/LeoAndroidDemo/
 $ mkdir -p libyuv/jni
 $ cd libyuv/jni
 $ git clone https://chromium.googlesource.com/libyuv/libyuv .
@@ -83,17 +83,17 @@ endif
 
 ### Compile
 ```
-$ cd /Users/yhz61010/AndroidStudioProjects/LeoAndroidBaseUtilProject-Kotlin/libyuv/jni
+$ cd /Users/yhz61010/AndroidStudioProjects/LeoAndroidDemo/libyuv/jni
 $ ndk-build
 ```
-You'll get the `so` files in the generated folder `/Users/yhz61010/AndroidStudioProjects/LeoAndroidBaseUtilProject-Kotlin/libyuv/libs`
+You'll get the `so` files in the generated folder `/Users/yhz61010/AndroidStudioProjects/LeoAndroidDemo/libyuv/libs`
 
 ## How to compile `yuv-sdk`
 First, copy `include` folder from `libyuv/jni` to `yuv-sdk/main/cpp`.
 Then, you have three ways to compile `yuv-sdk` module:
 - Compile with `gradlew` command.
 ```
-$ cd /Users/yhz61010/AndroidStudioProjects/LeoAndroidBaseUtilProject-Kotlin/
+$ cd /Users/yhz61010/AndroidStudioProjects/LeoAndroidDemo/
 $ ./gradlew yuv-sdk:assemble
 ```
 - Compile from `Gradle` sidebar.
