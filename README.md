@@ -56,8 +56,8 @@ $ cd /Users/yhz61010/AndroidStudioProjects/LeoAndroidDemo/
 $ mkdir -p libyuv/jni
 $ cd libyuv/jni
 $ git clone https://chromium.googlesource.com/libyuv/libyuv .
-# or unzip `libyuv-20220324.tar.gz` file
-$ tar xvzf ../../yuv-sdk/libyuv-20220324.tar.gz --strip-components 1
+# or unzip `libyuv-20220713.tar.gz` file from `yuv-sdk` module.
+$ tar xvzf ../../yuv-sdk/libyuv-20220713.tar.gz --strip-components 1
 ```
 
 ### Modify `./libyuv/jni/Android.mk` file
